@@ -4,38 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
   <title>Arnav Kalekar</title>
 </head>
+
 <body>
   <div class="grid-2">
+    <!-- Left rail ----------------------------------------------------------->
     <div class="section-1">
       <i class="fas fa-code fa-5x white"></i>
-      <h2>Arnav Kalekar</h2>
+      <h2 class="heading">Arnav Kalekar</h2>
       <p>NYC Metro Area</p>
-      <a href="mailto:akalekar@purdue.edu"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/arnavkalekar/"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/arnav-42"><i class="fab fa-github"></i></a>
+
+      <nav class="icon-bar">
+        <a href="mailto:akalekar@purdue.edu"   aria-label="email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/arnavkalekar/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/arnav-42"  aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </nav>
     </div>
+
+    <!-- Right panel ---------------------------------------------------------->
     <div class="section-2">
-      <h2>About</h2>
+      <h2 class="heading">About</h2>
       <p>Hello! I'm an engineering student at Purdue, currently interning at Wealthstone Group where I focus on alternative assets. I'm especially interested in how machine learning, optimization, and algorithmic strategies can be used to solve real-world problems. In my free time, I enjoy playing guitar, reading, and writing.</p>
+
       <p>Here's a list of things I've worked on or am currently building:</p>
-      <ul>
+      <ul class="project-list">
         <li>An MCP-enabled AI assistant for natural interaction and content retrieval</li>
         <li>A dashboard for analyzing investment portfolios, with proprietary data abstracted server-side</li>
         <li>A Rust-based implementation of common digital guitar effects</li>
         <li>A PyPI open-source CLI tool for Project Euler problems</li>
-        <li>A real-time pipeline that generates trading signals from newly-released SEC filings in real time</li>
+        <li>A real-time pipeline that generates trading signals from newly-released SEC filings</li>
         <li>An automation tool to populate slide decks with Excel data</li>
         <li>A system to detect cross-exchange and triangular arbitrage in crypto markets</li>
         <li>A programmable multi-effects guitar pedal using the ESP8266 microcontroller</li>
         <li>A collection of algorithmic trading strategies based on the Markov property and state transitions</li>
       </ul>
+
       <p>If you’d like to see my CV, collaborate, or have any questions, feel free to reach out using the links on the left.</p>
 
-      <h2>Skills</h2>
+      <h2 class="heading">Skills</h2>
       <p>I primarily work in Python and Julia, with experience in C, Verilog/SystemVerilog, MATLAB, and Java. I’m also familiar enough with Flask, SQLite, JavaScript, and HTML/CSS for rudimentary web apps.</p>
       <p>Tools I’ve used include Bloomberg Terminal, AutoCAD, LTSpice, and Blender.</p>
       <p>I’m currently learning, in no particular order: Rust, Django, React, AWS, and the ukulele.</p>
