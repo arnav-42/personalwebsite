@@ -57,7 +57,7 @@ a:hover{
 /* ---------------- SECTION-1 (LEFT) ---------------- */
 .section-1{
   text-align:center;
-  padding-top:35vh;
+  padding-top:5vh;
   padding-left:20vw;
   animation:fadeInUp 1s ease-out .05s both;
 }
