@@ -1,76 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO -->
+  <title>Arnav Kalekar | Portfolio</title>
+  <meta name="description"
+        content="Arnav Kalekar – computer engineering student at Purdue University interested in quantitative finance, AI systems, and algorithmic research. Explore projects, skills and contact info." />
+  <meta name="keywords"
+        content="Arnav Kalekar, Purdue, quant finance, algorithmic trading, AI, portfolio, computer engineering, boiler quant finance group, bqfg" />
+  <meta name="author" content="Arnav Kalekar" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical & sitemap -->
+  <link rel="canonical" href="https://arnav-42.github.io/" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+  <!-- Social (Open Graph & Twitter) -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://arnav-42.github.io/" />
+  <meta property="og:title"       content="Arnav Kalekar | Portfolio" />
+  <meta property="og:description" content="Projects and research in quantitative finance, artificial intelligence, and machine learning." />
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:title"       content="Arnav Kalekar | Portfolio" />
+  <meta name="twitter:description" content="Projects and research in quantitative finance, artificial intelligence, and machine learning." />
+
+  <!-- Assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous">
+        crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
-  <title>Arnav Kalekar</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type":   "Person",
+    "name":    "Arnav Kalekar",
+    "url":     "https://arnav-42.github.io/",
+    "jobTitle":"Computer Engineering Student",
+    "affiliation":{
+      "@type":"CollegeOrUniversity",
+      "name":"Purdue University"
+    },
+    "sameAs":[
+      "https://github.com/arnav-42",
+      "https://www.linkedin.com/in/arnavkalekar",
+      "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7209073"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <div class="grid-2">
-    <!-- LEFT RAIL ---------------------------------------------------------->
-    <div class="section-1">
-      <i class="fas fa-code fa-5x white"></i>
-      <h2 id="typewriter">Arnav Kalekar</h2>
-      <p>NYC Metro Area</p>
+<div class="wrapper">
+  <!-- Header / Intro -->
+  <header class="intro">
+    <h1 id="typewriter">Arnav Kalekar</h1>
+    <p>NYC Metro Area</p>
 
-      <nav class="icon-bar">
-        <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7209073" aria-label="GitHub"><i class="fas fa-book"></i></a>
-        <a href="https://www.linkedin.com/in/arnavkalekar/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/arnav-42" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      </nav>
-    </div>
+    <nav class="icon-bar" aria-label="External links">
+      <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7209073"
+         aria-label="SSRN publications" rel="noopener">
+         <i class="fas fa-book"></i></a>
+      <a href="https://www.linkedin.com/in/arnavkalekar/"
+         aria-label="LinkedIn" target="_blank" rel="noopener">
+         <i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/arnav-42"
+         aria-label="GitHub" target="_blank" rel="noopener">
+         <i class="fab fa-github"></i></a>
+    </nav>
+  </header>
 
-    <!-- RIGHT PANEL -------------------------------------------------------->
-    <div class="section-2">
-      <!-- About -->
+  <main class="content">
+    <!-- About -->
+    <section id="about">
       <h2 class="heading">About</h2>
-      <p>Hello! I’m an engineering student at Purdue, currently interning at Wealthstone Group where I focus on alternative assets.</p>
-      <p>My research interests are in how machine learning, optimization, and algorithmic strategies can be used to solve real-world problems.</p>
-      <p>In my free time I enjoy <a href="https://www.instagram.com/_midnightpancakes/">playing guitar</a>, reading, and backpacking/hiking.</p>
-      <p><If you’d like to see my CV, collaborate, or have any questions, feel free to reach out.><br><br></p>
+      <p>Hello! I’m an engineering student at Purdue, currently interning at Wealthstone&nbsp;Group where I focus on alternative assets.</p>
+      <p>My research interests include how machine learning, optimization and algorithmic strategies can solve real-world problems.</p>
+      <p>In my free time I enjoy <a href="https://www.instagram.com/_midnightpancakes/" rel="noopener">playing guitar</a>, reading and backpacking.</p>
+      <p>If you’d like my résumé, to collaborate, or just chat, feel free to reach out.<br><br></p>
+    </section>
 
     <!-- Projects -->
-<h2 class="heading">Projects</h2>
-<ul class="project-list">
-  <li><span>MCP-enabled AI assistant for natural interaction and content retrieval</span></li>
-  <li><a href="https://github.com/arnav-42/irr-dashboard" target="_blank">Investment-portfolio dashboard</a> with server-side proprietary data abstraction</li>
-  <li><a href="https://github.com/arnav-42/RustGuitarEffects" target="_blank">Rust implementation</a> of common digital guitar effects</li>
-  <li><a href="https://pypi.org/project/projecteuler-cli/0.3.0/" target="_blank">Open-source CLI tool</a> for Project Euler problems (PyPI)</li>
-  <li><a href="https://github.com/arnav-42/trading-sec-filings" target="_blank">Real-time SEC-filing pipeline</a> that generates trading signals</li>
-  <li><span>Slide-deck automation tool that ingests Excel data</span></li>
-  <li><a href="https://docs.google.com/presentation/u/0/d/1jZ-vLtnYxoY5js3-lZ408hEo0RQXkEJ6ARajgu-6cQM/edit">Cross-exchange & triangular arbitrage detector</a> for crypto markets</li>
-  <li><span>ESP8266-based multi-effects guitar pedal with programmable presets</span></li>
-  <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5152243" target="_blank">Algorithmic trading strategies</a> based on Markov state transitions</li>
-</ul>
-
+    <section id="projects">
+      <h2 class="heading">Projects</h2>
+      <ul class="project-list">
+        <li><span>MCP-enabled AI assistant for natural content retrieval</span></li>
+        <li><a href="https://github.com/arnav-42/irr-dashboard" target="_blank" rel="noopener">Investment-portfolio dashboard</a> with server-side data abstraction</li>
+        <li><a href="https://github.com/arnav-42/RustGuitarEffects" target="_blank" rel="noopener">Rust implementation</a> of classic digital-guitar effects</li>
+        <li><a href="https://pypi.org/project/projecteuler-cli/0.3.0/" target="_blank" rel="noopener">Open-source CLI tool</a> for Project Euler (PyPI)</li>
+        <li><a href="https://github.com/arnav-42/trading-sec-filings" target="_blank" rel="noopener">Real-time SEC-filing pipeline</a> that generates trading signals</li>
+        <li><span>Slide-deck automation tool for Excel-driven reports</span></li>
+        <li><a href="https://docs.google.com/presentation/d/1jZ-vLtnYxoY5js3-lZ408hEo0RQXkEJ6ARajgu-6cQM/edit"
+               target="_blank" rel="noopener">Cross-exchange &amp; triangular-arbitrage detector</a> (crypto)</li>
+        <li><span>ESP8266-based multi-effects guitar pedal with presets</span></li>
+        <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5152243"
+               target="_blank" rel="noopener">Algorithmic trading strategies</a> using Markov state transitions</li>
+      </ul>
       <p><br><br></p>
+    </section>
 
-      <!-- Skills -->
+    <!-- Skills -->
+    <section id="skills">
       <h2 class="heading">Skills</h2>
-      <p>I primarily work in Python and Julia, with experience in C, Verilog/SystemVerilog, MATLAB, and Java. I’m also comfortable enough with Flask, SQLite, JavaScript, and HTML/CSS for lightweight web apps.</p>
-      <p>Tools I’ve used include Bloomberg Terminal, AutoCAD, LTSpice, and Blender.</p>
-      <p>Currently learning, in no particular order: Rust, Django, React, AWS, and the ukulele.</p>
-      <p><br><br></p>
+      <p>Primary languages: Python &amp; Julia; experienced with C, Verilog/SystemVerilog, MATLAB and Java.</p>
+      <p>Comfortable building lightweight web apps with Flask, SQLite, JavaScript and HTML/CSS.</p>
+      <p>Toolbox highlights: Bloomberg Terminal, AutoCAD, LTSpice, Blender.</p>
+      <p>Currently learning Rust, Django, React, AWS, and the ukulele.<br><br></p>
+    </section>
 
-      <!-- Contact -->
+    <!-- Contact -->
+    <section id="contact">
       <h2 class="heading">Contact</h2>
-      <p>Email: akalekar at purdue dot edu.</p>
+      <p>Email: <a href="mailto:akalekar@purdue.edu">akalekar@purdue.edu</a></p>
+    </section>
+  </main>
 
-      <!-- Acknowledgements -->
-      <p style="margin-top: 2rem; font-size: 0.8rem; color: #555;">
-  <br><br>HTML/CSS inspired by <a class="ack-link" href="https://github.com/giotsere/minimalist-portfolio">giotsere</a> and JS effects by <a class="ack-link" href="https://github.com/ceciliaxli/ceciliaxli.github.io">ceciliaxli</a>.
-</p>
+  <!-- Acknowledgements -->
+  <footer>
+    <p class="acknowledgements">
+      HTML/CSS inspired by
+      <a class="ack-link" href="https://github.com/giotsere/minimalist-portfolio" rel="noopener">giotsere</a>
+      &nbsp;|&nbsp;JS effects by
+      <a class="ack-link" href="https://github.com/ceciliaxli/ceciliaxli.github.io" rel="noopener">ceciliaxli</a>.
+    </p>
+  </footer>
+</div>
 
-    </div>
-  </div>
-
-  <!-- Typewriter effect -->
-  <script src="typewriter.js"></script>
+<!-- Typewriter effect -->
+<script src="typewriter.js" defer></script>
 </body>
 </html>
