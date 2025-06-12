@@ -54,14 +54,17 @@ h2.heading{
   animation:fadeInUp .8s ease-out .15s both;
 }
 
+/* Subtle underline for all links */
 a{
   color:var(--gray);
-  text-decoration:none;
-  transition:color .25s ease;
+  text-decoration:underline 0.06em transparent; /* thin, hidden by default */
+  text-underline-offset:3px;
+  transition:color .25s ease, text-decoration-color .25s ease;
 }
 a:hover,
 a:focus{
   color:var(--white);
+  text-decoration-color:currentColor;           /* becomes visible */
 }
 
 a:focus{
