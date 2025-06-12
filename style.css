@@ -18,7 +18,17 @@ body{
   color:var(--fg);
   -webkit-font-smoothing:antialiased;
 
-  cursor:url('/cursor.svg') 16 16, auto;
+  /* Default Wii-style cursor, fall back to the browser’s native arrow */
+  cursor:url('Wii-Cursor.cur') 16 16, default;
+}
+
+/* Wii “blue pointer” cursor for anything clickable */
+a,
+button,
+input[type="button"],
+input[type="submit"],
+.icon-bar a {
+  cursor:url('wii-pointer-blue-ccw.cur') 6 0, pointer;
 }
 
 /* --------------- LAYOUT --------------- */
