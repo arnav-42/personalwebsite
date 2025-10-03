@@ -17,19 +17,9 @@ body{
   background:var(--bg);
   color:var(--fg);
   -webkit-font-smoothing:antialiased;
-
-  /* Default Wii-style cursor, fall back to the browser’s native arrow */
-  cursor:url('Wii-Cursor.cur') 16 16, default;
 }
 
-/* Wii “blue pointer” cursor for anything clickable */
-a,
-button,
-input[type="button"],
-input[type="submit"],
-.icon-bar a {
-  cursor:url('wii-pointer-blue-ccw.cur') 6 0, pointer;
-}
+/* custom cursor is now injected via inline <style> in index.html */
 
 /* --------------- LAYOUT --------------- */
 .wrapper{
@@ -67,7 +57,7 @@ h2.heading{
 /* Subtle underline for all links */
 a{
   color:var(--gray);
-  text-decoration:underline 0.06em transparent; /* thin, hidden by default */
+  text-decoration:underline; /* always show underline */
   text-underline-offset:3px;
   transition:color .25s ease, text-decoration-color .25s ease;
 }
