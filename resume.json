@@ -1,0 +1,353 @@
+{
+  "basics": {
+    "name": "Arnav Kalekar",
+    "label": "Computer Engineering Undergraduate | Quantitative Finance | Software & AI Research",
+    "image": "",
+    "email": "akalekar@purdue.edu",
+    "phone": "917-370-8716",
+    "url": "https://github.com/arnav-42",
+    "summary": "Computer Engineering undergraduate at Purdue University specializing in quantitative finance, machine learning, and software engineering. Experience spanning alternative investments, automated trading, LLM research, multimodal AI systems, and financial modeling. Published researcher in algorithmic trading and multimodal AI. Proven leadership in quant finance, research, and large-scale engineering projects.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "West Lafayette",
+      "countryCode": "US",
+      "region": "Indiana"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "arnavkalekar",
+        "url": "https://linkedin.com/in/arnavkalekar"
+      },
+      {
+        "network": "GitHub",
+        "username": "arnav-42",
+        "url": "https://github.com/arnav-42"
+      }
+    ]
+  },
+
+  "education": [
+    {
+      "institution": "Purdue University",
+      "url": "https://www.purdue.edu",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor of Science",
+      "startDate": "2023-08-01",
+      "endDate": "2027-05-01",
+      "score": "",
+      "courses": [
+        "Python for Data Science",
+        "Ordinary Differential Equations",
+        "Discrete Mathematics",
+        "Multivariate Calculus",
+        "Advanced C Programming",
+        "Electrical Engineering Fundamentals",
+        "Digital System Design",
+        "AC and DC Circuit Analysis"
+      ]
+    }
+  ],
+
+  "work": [
+    {
+      "name": "Lambda Capital",
+      "position": "Investment Research Intern / Quantitative Software Development Intern",
+      "url": "",
+      "startDate": "2025-10-01",
+      "endDate": "",
+      "summary": "Quantitative research and software development for distressed and special situations investing using alternative data and transformer-based NLP.",
+      "highlights": [
+        "Identified distressed and over-leveraged acquisition targets using transformer-based NLP on loan and fundraising filings.",
+        "Built cosine-similarity algorithms to detect firms with strong fundamentals but capital inefficiencies.",
+        "Developed automated alternative-data pipelines in Python that boosted founder outreach response rates by 5×.",
+        "Generated trading and sourcing signals using transformer embeddings on large-scale alternative data.",
+        "Built an internal Flask web application for verifying outreach contacts and lead triage, cutting lead tracking time in half."
+      ]
+    },
+    {
+      "name": "Wealthstone Group",
+      "position": "Alternative Investments / Software Engineering Intern",
+      "url": "",
+      "startDate": "2025-05-01",
+      "endDate": "2025-08-01",
+      "summary": "Private credit, real estate, and alternative investment analytics for high-net-worth clients.",
+      "highlights": [
+        "Designed client-facing private credit and real estate investment pitch decks and proposals.",
+        "Implemented Monte Carlo simulations to model portfolio return distributions and tail-risk measures.",
+        "Built a performance attribution framework to compare private real estate alpha against public REIT benchmarks.",
+        "Developed Python-based discounted cash flow (DCF) models with scenario toggles and sensitivity analysis.",
+        "Created automation tools that reduced investment deck creation time from hours to minutes.",
+        "Developed interactive dashboards enabling clients to tweak portfolios and observe real-time outcome changes."
+      ]
+    },
+    {
+      "name": "Purdue University",
+      "position": "Undergraduate Researcher (AI/ML)",
+      "url": "https://engineering.purdue.edu",
+      "startDate": "2025-02-01",
+      "endDate": "",
+      "summary": "Research in multimodal AI, large language models, multi-agent systems, and automatic music transcription.",
+      "highlights": [
+        "Developing a multimodal AI system combining CNN-based computer vision, FFT audio analysis, and transformers to convert guitar performance videos into sheet music.",
+        "Improved transcription accuracy over baseline systems by 17% using YOLOv8, Mask R-CNN, and MediaPipe Hands.",
+        "Trained and integrated specialized AI experts on 800K+ music samples for a Mixture-of-Experts songwriting assistant.",
+        "Designed simulation frameworks for emergent multi-agent behavior and game-theoretic convergence in LLM environments.",
+        "Co-authored a paper accepted at IEEE Transactions on Multimedia."
+      ]
+    },
+    {
+      "name": "Purdue University",
+      "position": "Teaching Assistant – ECE 20001",
+      "url": "https://engineering.purdue.edu",
+      "startDate": "2025-08-01",
+      "endDate": "",
+      "summary": "Teaching assistant for core electrical engineering circuits and electronics course.",
+      "highlights": [
+        "Held office hours twice weekly for students in Electrical Engineering Fundamentals.",
+        "Taught phasors, complex impedance, transistor operation, transformer principles, and first/second-order circuit analysis."
+      ]
+    },
+    {
+      "name": "HP Tech Ventures",
+      "position": "Deal Sourcing and Startup Analysis Extern",
+      "url": "",
+      "startDate": "2025-03-01",
+      "endDate": "2025-05-01",
+      "summary": "Venture capital deal sourcing and market analysis.",
+      "highlights": [
+        "Conducted strategic sourcing of early-stage startups aligned with VC investment theses.",
+        "Prepared detailed startup investment memos analyzing market positioning and growth potential."
+      ]
+    },
+    {
+      "name": "Outlier",
+      "position": "AI Training Engineer (Contract)",
+      "url": "",
+      "startDate": "2024-05-01",
+      "endDate": "2024-08-01",
+      "summary": "Large language model quality assurance and data engineering.",
+      "highlights": [
+        "Enhanced LLM output accuracy through structured training data curation.",
+        "Supplied ground-truth datasets to correct hallucinations and optimize model responses."
+      ]
+    },
+    {
+      "name": "Reality AI Lab / Radical AI",
+      "position": "Artificial Intelligence Engineering Intern",
+      "url": "",
+      "startDate": "2024-05-01",
+      "endDate": "2024-08-01",
+      "summary": "AI application engineering and model pipeline development.",
+      "highlights": [
+        "Developed an AI quiz-generation tool using NLP for dynamic question creation.",
+        "Managed document ingestion pipelines for LLM training.",
+        "Contributed to team development of an open-source AI-powered career assistant."
+      ]
+    }
+  ],
+
+  "volunteer": [
+    {
+      "organization": "Engineers Without Borders",
+      "position": "Structures Engineer",
+      "url": "",
+      "startDate": "2023-09-01",
+      "endDate": "",
+      "summary": "International clean water infrastructure engineering projects.",
+      "highlights": [
+        "Designed clean water infrastructure for ~6,000 residents in rural Rwanda.",
+        "Created technical pipeline, tank, filtration, and tap-stand drawings using AutoCAD.",
+        "Worked alongside local engineers, NGOs, and community partners."
+      ]
+    },
+    {
+      "organization": "Boy Scouts of America",
+      "position": "Eagle Scout",
+      "url": "",
+      "startDate": "",
+      "endDate": "2023-06-01",
+      "summary": "Community leadership and civic infrastructure project.",
+      "highlights": [
+        "Led a town-wide fire hydrant road-marking restoration project.",
+        "Secured unanimous approval from mayor and town council.",
+        "Received commendation from U.S. Congressman Josh Gottheimer."
+      ]
+    }
+  ],
+
+  "publications": [
+    {
+      "name": "Applications of Stochastic Markov Models to Financial Markets",
+      "publisher": "SSRN – Quantitative Methods in Investing & Financial Statement Analysis",
+      "releaseDate": "2025-02-01",
+      "url": "https://dx.doi.org/10.2139/ssrn.5152243",
+      "summary": "Published whitepaper analyzing applications of Markov models to trading strategies across commodities and financial markets."
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Automated Cross-Exchange Crypto Arbitrage System",
+      "startDate": "2024-09-01",
+      "endDate": "",
+      "description": "Live cryptographic arbitrage trading system using graph algorithms and real-time exchange data.",
+      "highlights": [
+        "Led development of triangular arbitrage system using Bellman-Ford on real-time websocket feeds.",
+        "Backtested multiple strategies for large-cap cryptocurrencies."
+      ],
+      "url": ""
+    },
+    {
+      "name": "US Treasury Bond Yield Forecasting",
+      "startDate": "2024-01-01",
+      "endDate": "",
+      "description": "Time-series forecasting of 10-year Treasury yields using econometric and ML techniques.",
+      "highlights": [
+        "Built SARIMA, LSTM, and Prophet models.",
+        "Achieved 0.06 basis point MAE with R² of 0.934."
+      ],
+      "url": "https://github.com/arnav-42/bond-yield-prediction"
+    },
+    {
+      "name": "Automated SEC Filings Trading Signals",
+      "startDate": "2025-01-01",
+      "endDate": "",
+      "description": "Real-time trading signal generation using NLP on SEC filings.",
+      "highlights": [
+        "Generated trading signals within 60 seconds of 10-K and 8-K releases.",
+        "Integrated SEC EDGAR, OpenRouter, and Llama-3.3-70B."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Project Euler CLI",
+      "startDate": "2024-01-01",
+      "endDate": "",
+      "description": "Open-source PyPI tool for competitive programming problem tracking.",
+      "highlights": [
+        "Auto-generates problem stubs and tracks user progress.",
+        "Integrated RSS feeds for real-time problem updates."
+      ],
+      "url": "https://pypi.org/project/projecteuler-cli/"
+    },
+    {
+      "name": "Rust Guitar Effects",
+      "startDate": "2024-09-01",
+      "endDate": "",
+      "description": "Real-time modular audio DSP effects suite written in Rust.",
+      "highlights": [
+        "Implemented overdrive, chorus, delay, and modulation effects.",
+        "Designed low-latency DSP pipelines for live processing."
+      ],
+      "url": "https://github.com/arnav-42/RustGuitarEffects"
+    },
+    {
+      "name": "HerVoice – Congressional Bill Alert System",
+      "startDate": "2025-01-01",
+      "endDate": "2025-03-01",
+      "description": "Full-stack NLP-based congressional bill classification and alert platform.",
+      "highlights": [
+        "Built Flask + SQLite backend for bill ingestion and classification.",
+        "Integrated LLMs for real-time bill categorization and alerts."
+      ],
+      "url": "https://github.com/arnav-42/HerVoice"
+    },
+    {
+      "name": "OpenSeat – Campus Occupancy Tracker",
+      "startDate": "2025-04-01",
+      "endDate": "2025-04-01",
+      "description": "Full-stack demo web app simulating real-time seat availability tracking via computer vision.",
+      "highlights": [
+        "Simulated entry/exit sensors using computer vision tracking.",
+        "Auto-updated building occupancy and available seating."
+      ],
+      "url": ""
+    }
+  ],
+
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Advanced",
+      "keywords": ["Python", "C", "Rust", "Julia", "MATLAB", "SystemVerilog", "SQL", "Dart"]
+    },
+    {
+      "name": "Machine Learning & AI",
+      "level": "Advanced",
+      "keywords": ["PyTorch", "Scikit-learn", "Transformers", "LangChain", "NLP", "Computer Vision", "LLMs", "Multi-Agent Systems"]
+    },
+    {
+      "name": "Quantitative Finance",
+      "level": "Advanced",
+      "keywords": ["Monte Carlo Simulation", "Time Series Forecasting", "Algorithmic Trading", "Markov Models", "Portfolio Optimization", "DCF", "NPV/IRR"]
+    },
+    {
+      "name": "Hardware & Embedded Systems",
+      "level": "Intermediate",
+      "keywords": ["FPGA (Lattice iCE40)", "ESP32", "ESP8266", "Arduino"]
+    },
+    {
+      "name": "Software & Tools",
+      "level": "Advanced",
+      "keywords": ["Git", "LaTeX", "Bloomberg Terminal", "AutoCAD", "SolidWorks", "Blender", "LTSpice", "Reaper", "KiCad", "Excel (VBA, Python Automation)"]
+    }
+  ],
+
+  "certificates": [],
+
+  "awards": [
+    {
+      "title": "Eagle Scout",
+      "date": "2023-06-01",
+      "awarder": "Boy Scouts of America",
+      "summary": "Highest rank in scouting for leadership and service."
+    },
+    {
+      "title": "International DECA Finalist (Top 20)",
+      "date": "",
+      "awarder": "DECA",
+      "summary": ""
+    },
+    {
+      "title": "JPMorgan Chase App Design Winner (1st Place)",
+      "date": "",
+      "awarder": "JPMorgan Chase",
+      "summary": ""
+    }
+  ],
+
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+
+  "interests": [
+    {
+      "name": "Music",
+      "keywords": ["Guitar", "Songwriting", "Music Production"]
+    },
+    {
+      "name": "Games",
+      "keywords": ["Board Games", "Card Games", "Competitive Puzzles"]
+    },
+    {
+      "name": "Outdoors",
+      "keywords": ["Hiking", "Backpacking", "Camping"]
+    },
+    {
+      "name": "Reading & Writing",
+      "keywords": ["Nonfiction", "Finance", "Technology"]
+    }
+  ],
+
+  "references": [
+    {
+      "name": "Available upon request",
+      "reference": ""
+    }
+  ]
+}
