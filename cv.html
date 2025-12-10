@@ -6,61 +6,128 @@
   <title>CV - Arnav Kalekar</title>
   <link rel="stylesheet" href="styles.css">
   <style>
+    :root {
+      --cv-accent: #4b6bfb;
+      --cv-soft: #f5f7fb;
+      --cv-border: #e8ebf3;
+      --cv-text: #111111;
+      --cv-subtle: #5f6c86;
+    }
+
+    body {
+      background: linear-gradient(180deg, #f6f7fb 0%, #ffffff 240px);
+    }
+
     .cv-container {
-      max-width: 900px;
-      margin: 0 auto;
+      max-width: 1040px;
+      margin: 32px auto 0;
+      padding: 28px clamp(18px, 3vw, 32px) 36px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+      border: 1px solid var(--cv-border);
     }
     
     .cv-header {
-      margin-bottom: 32px;
+      margin-bottom: 28px;
       padding-bottom: 16px;
-      border-bottom: 1px solid #e5e5e5;
+      border-bottom: 1px solid var(--cv-border);
     }
     
     .cv-header h1 {
-      font-size: clamp(20px, 3vw, 28px);
-      font-weight: 500;
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 600;
       margin-bottom: 8px;
+      color: var(--cv-text);
+      letter-spacing: -0.01em;
     }
     
     .cv-header .label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      background: linear-gradient(135deg, rgba(75,107,251,0.08), rgba(75,107,251,0.02));
+      border: 1px solid var(--cv-border);
+      border-radius: 999px;
       font-size: clamp(12px, 1.5vw, 14px);
-      color: #666666;
-      margin-bottom: 12px;
+      color: var(--cv-subtle);
+      margin-bottom: 14px;
     }
     
-    .cv-header .contact-info {
-      font-size: clamp(11px, 1.4vw, 13px);
-      line-height: 1.8;
+    .cv-summary {
+      margin-top: 14px;
+      color: #2a2f3a;
+      line-height: 1.65;
+      font-size: clamp(12.5px, 1.55vw, 14px);
     }
-    
-    .cv-header .contact-info a {
-      color: #111111;
+
+    .cv-contact-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .cv-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      border: 1px solid var(--cv-border);
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--cv-subtle);
+      font-size: clamp(11px, 1.35vw, 12.5px);
       text-decoration: none;
+      transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
     }
-    
-    .cv-header .contact-info a:hover {
-      text-decoration: underline;
+
+    .cv-chip:hover {
+      border-color: var(--cv-accent);
+      color: var(--cv-accent);
+      box-shadow: 0 6px 18px rgba(75, 107, 251, 0.08);
+      transform: translateY(-1px);
     }
     
     .cv-section {
-      margin-bottom: 32px;
+      margin-bottom: 24px;
+      padding: 20px 20px 16px 20px;
+      border: 1px solid var(--cv-border);
+      border-radius: 14px;
+      background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
     }
     
     .cv-section-title {
+      position: relative;
       font-size: clamp(16px, 2vw, 18px);
-      font-weight: 500;
-      margin-bottom: 16px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #e5e5e5;
-      text-transform: capitalize;
+      font-weight: 600;
+      margin-bottom: 14px;
+      padding-left: 14px;
+      color: #1f2430;
+    }
+
+    .cv-section-title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 4px;
+      height: 18px;
+      border-radius: 6px;
+      background: linear-gradient(180deg, var(--cv-accent), #7c92ff);
     }
     
-    .cv-item {
-      margin-bottom: 24px;
+    .cv-item,
+    .cv-project-item,
+    .cv-education-item {
+      margin-bottom: 18px;
     }
     
-    .cv-item:last-child {
+    .cv-item:last-child,
+    .cv-project-item:last-child,
+    .cv-education-item:last-child {
       margin-bottom: 0;
     }
     
@@ -74,150 +141,193 @@
     }
     
     .cv-item-title {
-      font-weight: 500;
-      font-size: clamp(13px, 1.5vw, 14px);
+      font-weight: 600;
+      font-size: clamp(13.5px, 1.55vw, 15px);
+      color: #1f2430;
+      letter-spacing: -0.01em;
     }
     
     .cv-item-title a {
-      color: #111111;
+      color: inherit;
       text-decoration: none;
     }
     
     .cv-item-title a:hover {
       text-decoration: underline;
+      color: var(--cv-accent);
     }
     
     .cv-item-org {
-      font-weight: 400;
-      font-size: clamp(12px, 1.4vw, 13px);
-      color: #333333;
+      font-weight: 500;
+      font-size: clamp(12px, 1.45vw, 13.5px);
+      color: #33415c;
     }
     
     .cv-item-org a {
-      color: #333333;
+      color: inherit;
       text-decoration: none;
     }
     
     .cv-item-org a:hover {
       text-decoration: underline;
+      color: var(--cv-accent);
     }
     
     .cv-item-date {
       font-size: clamp(11px, 1.3vw, 12px);
-      color: #666666;
-      font-weight: 400;
+      color: #6b7488;
+      font-weight: 500;
       white-space: nowrap;
     }
     
     .cv-item-summary {
-      font-size: clamp(12px, 1.4vw, 13px);
-      color: #444444;
+      font-size: clamp(12.5px, 1.5vw, 13.5px);
+      color: #2f3342;
       margin-bottom: 8px;
       line-height: 1.6;
     }
     
     .cv-item-highlights {
-      list-style-type: disc;
-      margin-left: 20px;
-      margin-top: 8px;
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
     }
     
     .cv-item-highlights li {
-      font-size: clamp(11px, 1.3vw, 12px);
-      margin-bottom: 4px;
-      line-height: 1.5;
-      color: #444444;
+      position: relative;
+      padding-left: 18px;
+      font-size: clamp(12px, 1.4vw, 13px);
+      margin-bottom: 6px;
+      line-height: 1.55;
+      color: #3a4052;
+    }
+
+    .cv-item-highlights li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--cv-accent);
+      box-shadow: 0 0 0 5px rgba(75, 107, 251, 0.08);
     }
     
     .cv-skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-      margin-top: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 10px;
     }
     
     .cv-skill-item {
-      margin-bottom: 12px;
+      padding: 12px;
+      border: 1px dashed var(--cv-border);
+      border-radius: 10px;
+      background: #f9fbff;
     }
     
     .cv-skill-name {
-      font-weight: 500;
-      font-size: clamp(12px, 1.4vw, 13px);
-      margin-bottom: 4px;
+      font-weight: 600;
+      font-size: clamp(12.5px, 1.5vw, 13.5px);
+      margin-bottom: 8px;
+      color: #1f2430;
     }
     
     .cv-skill-keywords {
-      font-size: clamp(11px, 1.3vw, 12px);
-      color: #666666;
-      line-height: 1.6;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
     }
     
-    .cv-skill-keywords span {
-      display: inline-block;
-      margin-right: 8px;
+    .cv-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #30407a;
+      font-size: clamp(11px, 1.35vw, 12.5px);
+      border: 1px solid #dfe6ff;
+      letter-spacing: 0.01em;
     }
     
     .cv-project-item {
-      margin-bottom: 20px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--cv-border);
+    }
+
+    .cv-project-item:last-child {
+      border-bottom: none;
     }
     
     .cv-project-name {
-      font-weight: 500;
-      font-size: clamp(13px, 1.5vw, 14px);
+      font-weight: 600;
+      font-size: clamp(13.5px, 1.55vw, 15px);
       margin-bottom: 4px;
+      color: #1f2430;
     }
     
     .cv-project-description {
-      font-size: clamp(12px, 1.4vw, 13px);
-      color: #444444;
+      font-size: clamp(12.5px, 1.5vw, 13.5px);
+      color: #2f3342;
       margin-bottom: 8px;
       line-height: 1.6;
     }
     
-    .cv-education-item {
-      margin-bottom: 20px;
-    }
-    
     .cv-education-institution {
-      font-weight: 500;
-      font-size: clamp(13px, 1.5vw, 14px);
+      font-weight: 600;
+      font-size: clamp(13.5px, 1.55vw, 15px);
       margin-bottom: 4px;
+      color: #1f2430;
     }
     
     .cv-education-area {
-      font-size: clamp(12px, 1.4vw, 13px);
-      color: #444444;
+      font-size: clamp(12.5px, 1.5vw, 13.5px);
+      color: #2f3342;
       margin-bottom: 4px;
     }
     
     .cv-education-courses {
-      font-size: clamp(11px, 1.3vw, 12px);
-      color: #666666;
-      margin-top: 4px;
+      font-size: clamp(11.5px, 1.35vw, 12.5px);
+      color: #5b6479;
+      margin-top: 6px;
     }
     
     .cv-interests-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 8px;
+      gap: 10px;
+      margin-top: 6px;
     }
     
     .cv-interest-item {
-      font-size: clamp(12px, 1.4vw, 13px);
+      padding: 10px 12px;
+      border: 1px solid var(--cv-border);
+      border-radius: 10px;
+      background: #f9fbff;
+      min-width: 180px;
     }
     
     .cv-interest-name {
-      font-weight: 500;
+      font-weight: 600;
+      color: #1f2430;
+      font-size: clamp(12.5px, 1.5vw, 13.5px);
     }
     
     .cv-interest-keywords {
-      font-size: clamp(11px, 1.3vw, 12px);
-      color: #666666;
-      margin-top: 2px;
+      font-size: clamp(11.5px, 1.35vw, 12.5px);
+      color: #5b6479;
+      margin-top: 4px;
     }
     
     @media (max-width: 768px) {
+      .cv-container {
+        margin: 16px auto 0;
+        padding: 22px 16px 26px 16px;
+      }
+
       .cv-item-header {
         flex-direction: column;
         align-items: flex-start;
@@ -263,30 +373,51 @@
 
     function renderCV(resume) {
       const container = document.getElementById('cv-content');
+      const basics = resume.basics || {};
       let html = '';
 
       // Header
       html += '<div class="cv-header">';
-      html += `<h1>${resume.basics.name}</h1>`;
-      if (resume.basics.label) {
-        html += `<div class="label">${resume.basics.label}</div>`;
+      html += `<h1>${basics.name || ''}</h1>`;
+      if (basics.label) {
+        html += `<div class="label">${basics.label}</div>`;
       }
-      html += '<div class="contact-info">';
-      if (resume.basics.email) {
-        html += `Email: <a href="mailto:${resume.basics.email}">${resume.basics.email}</a><br>`;
+      html += '<div class="cv-contact-chips">';
+      if (basics.email) {
+        html += `<a class="cv-chip" href="mailto:${basics.email}">Email</a>`;
       }
-      if (resume.basics.profiles) {
-        resume.basics.profiles.forEach(profile => {
-          if (profile.network === 'GitHub') {
-            html += `GitHub: <a href="https://${profile.url}" target="_blank">${profile.url}</a><br>`;
-          } else if (profile.network === 'LinkedIn') {
-            html += `LinkedIn: <a href="https://${profile.url}" target="_blank">${profile.url}</a><br>`;
+      if (basics.phone) {
+        html += `<span class="cv-chip">${basics.phone}</span>`;
+      }
+      if (basics.url) {
+        const siteUrl = basics.url.startsWith('http') ? basics.url : `https://${basics.url}`;
+        html += `<a class="cv-chip" href="${siteUrl}" target="_blank">Website</a>`;
+      }
+      if (basics.profiles) {
+        basics.profiles.forEach(profile => {
+          const profileUrl = profile.url
+            ? (profile.url.startsWith('http') ? profile.url : `https://${profile.url}`)
+            : '';
+          if (profile.network && profileUrl) {
+            html += `<a class="cv-chip" href="${profileUrl}" target="_blank">${profile.network}</a>`;
+          } else if (profile.network) {
+            html += `<span class="cv-chip">${profile.network}</span>`;
           }
         });
       }
+      const locationParts = [];
+      if (basics.location) {
+        const loc = basics.location;
+        if (loc.city) locationParts.push(loc.city);
+        if (loc.region) locationParts.push(loc.region);
+        if (loc.countryCode) locationParts.push(loc.countryCode);
+      }
+      if (locationParts.length > 0) {
+        html += `<span class="cv-chip">Location: ${locationParts.join(', ')}</span>`;
+      }
       html += '</div>';
-      if (resume.basics.summary) {
-        html += `<p class="simple-text" style="margin-top: 12px;">${resume.basics.summary}</p>`;
+      if (basics.summary) {
+        html += `<p class="cv-summary">${basics.summary}</p>`;
       }
       html += '</div>';
 
@@ -306,7 +437,7 @@
             html += `<div class="cv-item-date">${start}${start && end ? ' - ' : ''}${end}</div>`;
           }
           if (edu.courses && edu.courses.length > 0) {
-            html += `<div class="cv-education-courses">Relevant Course: ${edu.courses.join(', ')}</div>`;
+            html += `<div class="cv-education-courses">Relevant Courses: ${edu.courses.join(', ')}</div>`;
           }
           html += '</div>';
         });
@@ -382,14 +513,37 @@
           html += `<div class="cv-skill-name">${skill.name}</div>`;
           if (skill.keywords && skill.keywords.length > 0) {
             html += '<div class="cv-skill-keywords">';
-            skill.keywords.forEach((keyword, index) => {
-              html += `<span>${keyword}${index < skill.keywords.length - 1 ? ',' : ''}</span>`;
+            skill.keywords.forEach(keyword => {
+              html += `<span class="cv-tag">${keyword}</span>`;
             });
             html += '</div>';
           }
           html += '</div>';
         });
         html += '</div>';
+        html += '</div>';
+      }
+
+      // Awards
+      if (resume.awards && resume.awards.length > 0) {
+        html += '<div class="cv-section">';
+        html += '<h2 class="cv-section-title">Awards</h2>';
+        resume.awards.forEach(award => {
+          html += '<div class="cv-item">';
+          html += '<div class="cv-item-header">';
+          html += `<div class="cv-item-title">${award.title}</div>`;
+          if (award.date) {
+            html += `<div class="cv-item-date">${award.date}</div>`;
+          }
+          html += '</div>';
+          if (award.awarder) {
+            html += `<div class="cv-item-org">${award.awarder}</div>`;
+          }
+          if (award.summary) {
+            html += `<div class="cv-item-summary">${award.summary}</div>`;
+          }
+          html += '</div>';
+        });
         html += '</div>';
       }
 

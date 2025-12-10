@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Arnav Kalekar",
-    "label": "Computer Engineering Undergraduate | Quantitative Finance | Software & AI Research",
+    "label": "Computer Engineering Undergraduate | Finance | AI Research",
     "image": "",
     "email": "akalekar@purdue.edu",
     "phone": "917-370-8716",
     "url": "https://github.com/arnav-42",
-    "summary": "Computer Engineering undergraduate at Purdue University specializing in quantitative finance, machine learning, and software engineering. Experience spanning alternative investments, automated trading, LLM research, multimodal AI systems, and financial modeling. Published researcher in algorithmic trading and multimodal AI. Proven leadership in quant finance, research, and large-scale engineering projects.",
+    "summary": "Computer Engineering undergraduate at Purdue University interested in markets, investing, and artificial intelligence. Experience spanning alternative investments, automated trading, LLM research, multimodal AI systems, and financial modeling. Proven leadership in finance, research, and large-scale engineering projects.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -44,8 +44,7 @@
         "Multivariate Calculus",
         "Advanced C Programming",
         "Electrical Engineering Fundamentals",
-        "Digital System Design",
-        "AC and DC Circuit Analysis"
+        "Digital System Design"
       ]
     }
   ],
@@ -53,14 +52,12 @@
   "work": [
     {
       "name": "Lambda Capital",
-      "position": "Investment Research Intern / Quantitative Software Development Intern",
+      "position": "Quantitative Investment Research Intern",
       "url": "",
       "startDate": "2025-10-01",
       "endDate": "",
-      "summary": "Quantitative research and software development for distressed and special situations investing using alternative data and transformer-based NLP.",
+      "summary": "Quantitative research and software development using alternative data and transformer-based NLP.",
       "highlights": [
-        "Identified distressed and over-leveraged acquisition targets using transformer-based NLP on loan and fundraising filings.",
-        "Built cosine-similarity algorithms to detect firms with strong fundamentals but capital inefficiencies.",
         "Developed automated alternative-data pipelines in Python that boosted founder outreach response rates by 5×.",
         "Generated trading and sourcing signals using transformer embeddings on large-scale alternative data.",
         "Built an internal Flask web application for verifying outreach contacts and lead triage, cutting lead tracking time in half."
@@ -68,7 +65,7 @@
     },
     {
       "name": "Wealthstone Group",
-      "position": "Alternative Investments / Software Engineering Intern",
+      "position": "Alternative Investments Intern",
       "url": "",
       "startDate": "2025-05-01",
       "endDate": "2025-08-01",
@@ -93,8 +90,8 @@
         "Developing a multimodal AI system combining CNN-based computer vision, FFT audio analysis, and transformers to convert guitar performance videos into sheet music.",
         "Improved transcription accuracy over baseline systems by 17% using YOLOv8, Mask R-CNN, and MediaPipe Hands.",
         "Trained and integrated specialized AI experts on 800K+ music samples for a Mixture-of-Experts songwriting assistant.",
-        "Designed simulation frameworks for emergent multi-agent behavior and game-theoretic convergence in LLM environments.",
-        "Co-authored a paper accepted at IEEE Transactions on Multimedia."
+        "Designed simulation frameworks for emergent multi-agent behavior and game-theoretic convergence in LLM environments."
+
       ]
     },
     {
@@ -134,7 +131,7 @@
       ]
     },
     {
-      "name": "Reality AI Lab / Radical AI",
+      "name": "Reality AI Lab",
       "position": "Artificial Intelligence Engineering Intern",
       "url": "",
       "startDate": "2024-05-01",
@@ -157,7 +154,7 @@
       "endDate": "",
       "summary": "International clean water infrastructure engineering projects.",
       "highlights": [
-        "Designed clean water infrastructure for ~6,000 residents in rural Rwanda.",
+        "Designed clean water infrastructure for several communities in rural Rwanda.",
         "Created technical pipeline, tank, filtration, and tap-stand drawings using AutoCAD.",
         "Worked alongside local engineers, NGOs, and community partners."
       ]
@@ -192,7 +189,7 @@
       "name": "Automated Cross-Exchange Crypto Arbitrage System",
       "startDate": "2024-09-01",
       "endDate": "",
-      "description": "Live cryptographic arbitrage trading system using graph algorithms and real-time exchange data.",
+      "description": "Live cryptocurrency arbitrage trading system using graph algorithms and real-time exchange data.",
       "highlights": [
         "Led development of triangular arbitrage system using Bellman-Ford on real-time websocket feeds.",
         "Backtested multiple strategies for large-cap cryptocurrencies."
@@ -337,10 +334,6 @@
     {
       "name": "Outdoors",
       "keywords": ["Hiking", "Backpacking", "Camping"]
-    },
-    {
-      "name": "Reading & Writing",
-      "keywords": ["Nonfiction", "Finance", "Technology"]
     }
   ],
 
