@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20241210">
 </head>
 <body>
 
@@ -12,9 +12,14 @@
     <a href="index.html">Home</a>
     <a href="research.html">Research</a>
     <a href="repositories.html">repositories</a>
-    <a href="cv.html">CV</a>
-    <a href="blog.html">Blog</a>
     <a href="contact.html">Contact</a>
+    <div class="nav-more">
+      <button class="nav-more-btn" aria-haspopup="true" aria-expanded="false">More ▾</button>
+      <div class="nav-more-menu" role="menu">
+        <a href="blog.html" role="menuitem">Blog</a>
+        <a href="tools.html" role="menuitem">Tools</a>
+      </div>
+    </div>
   </nav>
 
   <main>
@@ -67,5 +72,6 @@
     </div>
   </main>
 
+  <script src="nav.js"></script>
 </body>
 </html>
