@@ -1,4 +1,4 @@
-Link: arnav.id
+Site: arnav.id
 
 This is my personal website. I use Cloudflare pages for hosting.
 
