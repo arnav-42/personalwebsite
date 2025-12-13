@@ -1,8 +1,20 @@
-Site: arnav.id
+## Site: www.arnav.id
 
-This is my personal website. I use Cloudflare pages for hosting.
+### Stack
+- Static HTML/CSS/JS
+- Cloudflare Pages hosting
 
-Previous versions of this site (before current refactor) included all sorts of overhead. As my taste in webpages has changed and my appreciation for simplicity has grown, I've changed my website to be as simple as possible. You might still see some JS animation code left over in the repo - that's something I'll clean up eventually.
+### Structure
+- `/index.html` home
+- `/research.html`, `/repositories.html`, `/notes.html`, `/blog.html`, `/contact.html`, `/tools.html`
+- Assets in `assets/css`, `assets/js`, `assets/img`
+- Notes PDFs in `notes/`
 
-I might yet again refactor the website entirely one day - I didn't know about stuff like Jekyll before I started.
+### Notes roadmap
+- I may split notes into a separate repo and use GitHub Actions to sync or publish them into `notes/` here for easier updates.
 
+### Future themes
+- I discovered Jekyll after this refactor. I might migrate to a Jekyll theme in the future for templating and easier content management.
+
+### JS animation
+- `assets/js/nav.js` also draws a red, fading laser trail when you click-drag on the page (canvas overlay with a fade loop).
