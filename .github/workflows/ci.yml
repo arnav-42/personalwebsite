@@ -36,19 +36,40 @@ jobs:
       - name: Check local asset references
         run: |
           set -euo pipefail
-          refs=$(grep -hoE 'assets/(css|js|img)/[^"]+|notes/[^"]+' \
-            index.html research.html repositories.html notes.html blog.html contact.html tools.html | sed 's/#.*//')
-          missing=0
-          for ref in $refs; do
-            case "$ref" in
-              http* ) continue ;;
-            esac
-            if [ -f "$ref" ]; then
-              continue
-            fi
-            echo "Missing asset: $ref" >&2
-            missing=1
-          done
-          if [ "$missing" -ne 0 ]; then
-            exit 1
-          fi
+          python - <<'PY'
+          import pathlib, re, sys
+          from urllib.parse import unquote
+
+          pages = [
+              "index.html",
+              "research.html",
+              "repositories.html",
+              "notes.html",
+              "blog.html",
+              "contact.html",
+              "tools.html",
+          ]
+
+          missing = []
+
+          for page in pages:
+              html = pathlib.Path(page).read_text(encoding="utf-8")
+              for attr in ("href", "src"):
+                  for m in re.finditer(attr + r'="([^"]+)"', html):
+                      target = m.group(1)
+                      if target.startswith(("http://", "https://", "mailto:", "tel:", "#")):
+                          continue
+                      # drop fragment/query and decode %20, etc.
+                      target = target.split("#", 1)[0].split("?", 1)[0]
+                      target = unquote(target)
+                      # skip absolute-root or protocol-relative refs
+                      if target.startswith(("/", "//")) or not target:
+                          continue
+                      if not pathlib.Path(target).exists():
+                          missing.append((page, target))
+
+          if missing:
+              for page, target in missing:
+                  print(f"{page} references missing {target}")
+              sys.exit(1)
+          PY
