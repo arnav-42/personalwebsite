@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ensure required files exist
+        run: |
+          set -euo pipefail
+          for f in \
+            index.html research.html repositories.html notes.html blog.html contact.html tools.html \
+            assets/css/styles.css assets/js/nav.js \
+          ; do
+            if [ ! -f "$f" ]; then
+              echo "Missing required file: $f" >&2
+              exit 1
+            fi
+          done
+
+      - name: Verify HTML files are non-empty
+        run: |
+          set -euo pipefail
+          for f in index.html research.html repositories.html notes.html blog.html contact.html tools.html; do
+            if [ ! -s "$f" ]; then
+              echo "File is empty: $f" >&2
+              exit 1
+            fi
+          done
+
+      - name: Check local asset references
+        run: |
+          set -euo pipefail
+          refs=$(grep -hoE 'assets/(css|js|img)/[^"]+|notes/[^"]+' \
+            index.html research.html repositories.html notes.html blog.html contact.html tools.html | sed 's/#.*//')
+          missing=0
+          for ref in $refs; do
+            case "$ref" in
+              http* ) continue ;;
+            esac
+            if [ -f "$ref" ]; then
+              continue
+            fi
+            echo "Missing asset: $ref" >&2
+            missing=1
+          done
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
