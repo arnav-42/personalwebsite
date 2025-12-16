@@ -1,5 +1,5 @@
 ## Site: www.arnav.id
-
+[![CI](https://github.com/arnav-42/personalwebsite/actions/workflows/ci.yml/badge.svg)](https://github.com/arnav-42/personalwebsite/actions/workflows/ci.yml)
 ### Stack
 - Static HTML/CSS/JS
 - Cloudflare Pages hosting
