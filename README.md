@@ -7,7 +7,7 @@
 ### Structure
 - `/index.html` home
 - `/research.html`, `/repositories.html`, `/notes.html`, `/blog.html`, `/contact.html`, `/tools.html`
-- Assets in `assets/css`, `assets/js`, `assets/img`
+- Assets in `assets/css`, `assets/js`, `assets/img`, and `assets/materials`.
 - Notes PDFs in `notes/`
 
 ### Notes roadmap
